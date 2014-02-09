@@ -41,6 +41,7 @@ syn match sassMixin  "^="               nextgroup=sassMixinName skipwhite
 syn match sassMixin  "\%([{};]\s*\|^\s*\)\@<=@mixin"   nextgroup=sassMixinName skipwhite
 syn match sassMixing "^\s\+\zs+"        nextgroup=sassMixinName
 syn match sassMixing "\%([{};]\s*\|^\s*\)\@<=@include" nextgroup=sassMixinName skipwhite
+syn match sassMedia "\%([{};]\s*\|^\s*\)\@<=@media"
 syn match sassExtend "\%([{};]\s*\|^\s*\)\@<=@extend"
 syn match sassPlaceholder "\%([{};]\s*\|^\s*\)\@<=%"   nextgroup=sassMixinName skipwhite
 
@@ -77,6 +78,7 @@ hi def link sassVariable                Identifier
 hi def link sassFunction                Function
 hi def link sassMixing                  PreProc
 hi def link sassMixin                   PreProc
+hi def link sassMedia                   PreProc
 hi def link sassPlaceholder             PreProc
 hi def link sassExtend                  PreProc
 hi def link sassFunctionDecl            PreProc
